@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import { theme } from '../utils/theme'
+import Typewriter from 'typewriter-effect'
 
 const MainContainer = styled.div`
   max-width: 500px;
@@ -22,7 +23,22 @@ const HeroText = () => {
   return (
     <MainContainer>
       <h1 className='faded'>What’s corpy?</h1>
-      <h1>corpy is your digital identity.</h1>
+      <h1>
+        corpy is your{' '}
+        <Typewriter
+          options={{
+            strings: [
+              'Resume 2.0',
+              'Public profile',
+              'Personal website',
+              'Digital identity',
+            ],
+            autoStart: true,
+            loop: true,
+            deleteSpeed: 0.5,
+          }}
+        />
+      </h1>
     </MainContainer>
   )
 }
