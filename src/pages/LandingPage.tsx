@@ -24,7 +24,7 @@ const HeroContentWrapper = styled.section`
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 80px;
-  align-items: center;
+  align-items: flex-end;
 
   @media screen and (max-width: 1000px) {
     display: flex;
