@@ -20,7 +20,7 @@ const MainContainer = styled.main`
 `
 const HeroContentWrapper = styled.section`
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 80px;

@@ -4,15 +4,16 @@ import { theme } from '../utils/theme'
 import Typewriter from 'typewriter-effect'
 
 const MainContainer = styled.div`
-  max-width: 500px;
   h1 {
     font-size: 64px;
   }
   .faded {
     color: ${theme.fontLight2};
+    line-height: 90%;
   }
 
   @media screen and (max-width: 600px) {
+    height: 350px;
     h1 {
       font-size: 48px;
     }
@@ -22,7 +23,9 @@ const MainContainer = styled.div`
 const HeroText = () => {
   return (
     <MainContainer>
-      <h1 className='faded'>What’s corpy?</h1>
+      <h1 className='faded'>
+        What’s <br /> corpy?
+      </h1>
       <h1>
         corpy is your{' '}
         <Typewriter
