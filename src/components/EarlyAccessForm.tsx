@@ -76,11 +76,12 @@ const EarlyAccessForm = () => {
   return (
     <MainContainer>
       <Heading>SignUp for early access</Heading>
-      <Form name='early-access-requests' method='POST'>
+      <Form name='early-access-requests' method='post'>
         <input type='hidden' name='form-name' value='early-access-requests' />
         <Input
           type='email'
           name='email'
+          required
           placeholder='For eg. jhon@example.com'
         />
         <Button type='submit'>Get Early Access</Button>
